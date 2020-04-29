@@ -1,5 +1,10 @@
 #! /usr/bin/python3
 
+"""
+Description：反转链表
+Solution：遍历链表，每次将指针反转
+"""
+
 __author__ = 'yooongchun'
 
 
@@ -44,4 +49,5 @@ def test():
 
 
 if __name__ == '__main__':
+    print(__doc__)
     test()
