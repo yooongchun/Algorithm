@@ -2,7 +2,10 @@
 
 """
 Description：反转链表
-Solution：遍历链表，每次将指针反转
+Source: Leetcode 206
+Solution：
+    1. 遍历链表，每次将指针反转
+    2. 时间复杂度：O(n)，空间复杂度：O(1)
 """
 
 __author__ = 'yooongchun'
@@ -36,7 +39,7 @@ def reverse_link(root):
 def test():
     cases = ['as', 'a', '', 'aa', 'asd', 'asdfghjkllkjhgfdsa', 'aaaaaa', 'asasasas', '{[()]}', '{{',
              [], [1, 2], None, [1, 2, 1]]
-    print('%-20s\t%-10s' % ('Case', 'Palindrome'))
+    print('%-20s\t%-10s' % ('Case', 'Reversed'))
     for case in cases:
         root = create_link_str(case)
         res = reverse_link(root)
@@ -49,5 +52,4 @@ def test():
 
 
 if __name__ == '__main__':
-    print(__doc__)
     test()

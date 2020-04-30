@@ -1,12 +1,14 @@
 #! /usr/bin/python3
 
 """
-Description：判断链表是否为回文
+Description：判断链表是否为回文链表
+Source: Leetcode 234
 Solution：
     1. 使用双指针slow和fast遍历链表，其中slow一次移动一位，fast一次移动两位，遍历完找到链表中点slow
     2. 反转链表的后半部分
     3. 从中间向两边遍历链表，对比值是否相同，若不同，则不是回文。
     4. 3遍历结束，则为回文
+    5. 时间复杂度：O(n)，空间复杂度：O(1)
 """
 
 __author__ = 'yooongchun'
