@@ -4,8 +4,8 @@
 Description：合并两个有序链表
 Source: Leetcode 21
 Solution：
-    1. 设链表为root1和root2，同时遍历两个链表，每次对比值r1和r2，若r1较小，移动r1-->r1.next，
-       否则将r2插入r1之前，直到r1到达None。然后将r2剩余部分接到r1之后。
+    1. 设链表为root1和root2，引入一个头结点prev，同时遍历两个链表，
+        每次对比值r1和r2，若r1较小，将r1接到prev之后，然后移动r1-->r1.next，否则将r2接到prev之后
     2. 时间复杂度：O(n)，空间复杂度：O(1)
 """
 
